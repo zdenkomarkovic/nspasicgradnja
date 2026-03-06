@@ -30,14 +30,74 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Vaš partner za <span className="text-[#f97316]">savršeno renoviranje</span> i
-              adaptaciju stanova
+              Vaš partner za <span className="text-[#f97316]">renoviranje</span>,
+              adaptacije i <span className="text-[#f97316]">kućne popravke</span>
             </h1>
 
-            <p className="text-gray-300 text-lg sm:text-xl mb-10 leading-relaxed">
-              Radimo sve završne radove u građevini. Naš stručan tim pruža kvalitetne usluge koje
-              transformišu vaš prostor uz pristupačne cene.
+            <p className="text-gray-300 text-lg sm:text-xl mb-8 leading-relaxed">
+              Radimo sve završne radove u građevini — od kompletnih adaptacija stanova
+              do sitnih kućnih popravki. Jedan broj telefona, sve je rešeno.
             </p>
+
+            {/* Two main services highlight */}
+            <div className="grid grid-cols-2 gap-3 mb-8">
+              <a
+                href="/usluge/adaptacije"
+                className="group flex items-center gap-3 bg-white/5 hover:bg-[#f97316]/15 border border-white/10 hover:border-[#f97316]/50 rounded-xl px-4 py-3 transition-all duration-200"
+              >
+                <div className="w-9 h-9 bg-[#f97316]/20 group-hover:bg-[#f97316] rounded-lg flex items-center justify-center shrink-0 transition-colors duration-200">
+                  <svg className="w-5 h-5 text-[#f97316] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-white font-semibold text-sm">Adaptacije</div>
+                  <div className="text-gray-400 text-xs">Renoviranje stanova</div>
+                </div>
+              </a>
+              <a
+                href="/usluge/hausmajstor"
+                className="group flex items-center gap-3 bg-white/5 hover:bg-[#f97316]/15 border border-white/10 hover:border-[#f97316]/50 rounded-xl px-4 py-3 transition-all duration-200"
+              >
+                <div className="w-9 h-9 bg-[#f97316]/20 group-hover:bg-[#f97316] rounded-lg flex items-center justify-center shrink-0 transition-colors duration-200">
+                  <svg className="w-5 h-5 text-[#f97316] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-white font-semibold text-sm">Hausmajstor</div>
+                  <div className="text-gray-400 text-xs">Sve kućne popravke</div>
+                </div>
+              </a>
+              <a
+                href="/usluge/vodoinstalacije"
+                className="group flex items-center gap-3 bg-white/5 hover:bg-[#f97316]/15 border border-white/10 hover:border-[#f97316]/50 rounded-xl px-4 py-3 transition-all duration-200"
+              >
+                <div className="w-9 h-9 bg-[#f97316]/20 group-hover:bg-[#f97316] rounded-lg flex items-center justify-center shrink-0 transition-colors duration-200">
+                  <svg className="w-5 h-5 text-[#f97316] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-white font-semibold text-sm">Vodoinstalacije</div>
+                  <div className="text-gray-400 text-xs">Instalacije i popravke</div>
+                </div>
+              </a>
+              <a
+                href="/usluge/keramicarski-radovi"
+                className="group flex items-center gap-3 bg-white/5 hover:bg-[#f97316]/15 border border-white/10 hover:border-[#f97316]/50 rounded-xl px-4 py-3 transition-all duration-200"
+              >
+                <div className="w-9 h-9 bg-[#f97316]/20 group-hover:bg-[#f97316] rounded-lg flex items-center justify-center shrink-0 transition-colors duration-200">
+                  <svg className="w-5 h-5 text-[#f97316] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-white font-semibold text-sm">Keramičarski radovi</div>
+                  <div className="text-gray-400 text-xs">Pločice za sve prostorije</div>
+                </div>
+              </a>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -58,7 +118,7 @@ export default function Hero() {
                 href="#usluge"
                 className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-[#f97316] text-white hover:text-[#f97316] px-8 py-4 rounded font-semibold text-base transition-all duration-200"
               >
-                Naše usluge
+                Sve usluge
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
