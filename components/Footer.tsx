@@ -81,7 +81,17 @@ export default function Footer() {
 
         <div className="border-t border-white/5 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
           <p>&copy; {new Date().getFullYear()} N Spasić Gradnja. Sva prava zadržana.</p>
-          <p className="text-gray-600">Renoviranje i adaptacija stanova</p>
+          <p className="text-gray-400">
+            Izrada sajta:{" "}
+            <a
+              href="https://manikamwebsolutions.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#f97316] transition-colors duration-200"
+            >
+              Manikam Web Solutions
+            </a>
+          </p>
         </div>
       </div>
     </footer>
