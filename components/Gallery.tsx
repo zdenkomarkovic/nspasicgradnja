@@ -4,19 +4,24 @@ import Image from "next/image";
 import { useState } from "react";
 
 const images = [
-  "/IMG-20260123-WA0024.jpg",
-  "/IMG-20260123-WA0025.jpg",
-  "/IMG-20260123-WA0026.jpg",
-  "/IMG-20260123-WA0027.jpg",
-  "/IMG-20260123-WA0028.jpg",
-  "/IMG-20260123-WA0029.jpg",
-  "/IMG-20260123-WA0030.jpg",
-  "/IMG-20260123-WA0031.jpg",
-  "/IMG-20260123-WA0032.jpg",
-  "/IMG-20260123-WA0033.jpg",
-  "/IMG-20260123-WA0034.jpg",
-  "/IMG-20260123-WA0035.jpg",
-  "/IMG-20260123-WA0036.jpg",
+  "/a (1).jpg",
+  "/a (2).jpg",
+  "/a (3).jpg",
+  "/a (4).jpg",
+  "/a (5).jpg",
+  "/a (6).jpg",
+  "/a (7).jpg",
+  "/a (8).jpg",
+  "/a (9).jpg",
+  "/a (10).jpg",
+  "/a (11).jpg",
+  "/a (12).jpg",
+  "/a (13).jpg",
+  "/a (14).jpg",
+  "/a (15).jpg",
+  "/a (16).jpg",
+  "/a (17).jpg",
+  "/a (18).jpg",
 ];
 
 export default function Gallery() {
@@ -32,9 +37,7 @@ export default function Gallery() {
               Galerija
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1a2f4e] mb-4">
-            Naši radovi
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1a2f4e] mb-4">Naši radovi</h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
             Pogledajte neke od naših realizovanih projekata.
           </p>
@@ -87,7 +90,12 @@ export default function Gallery() {
             aria-label="Zatvori"
           >
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
           <div

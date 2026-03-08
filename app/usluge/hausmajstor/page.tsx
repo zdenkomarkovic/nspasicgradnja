@@ -119,12 +119,7 @@ const faqs = [
 ];
 
 export default function HausmajstorPage() {
-  const images = [
-    "/IMG-20260123-WA0036.jpg",
-    "/IMG-20260123-WA0024.jpg",
-    "/IMG-20260123-WA0025.jpg",
-    "/IMG-20260123-WA0026.jpg",
-  ];
+  const images = ["/3.webp", "/a (7).jpg", "/a (2).jpg", "/a (3).jpg"];
 
   return (
     <>
@@ -132,21 +127,28 @@ export default function HausmajstorPage() {
       <section className="bg-[#1a2f4e] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
-            <Link href="/" className="hover:text-[#f97316] transition-colors">Početna</Link>
+            <Link href="/" className="hover:text-[#f97316] transition-colors">
+              Početna
+            </Link>
             <span>/</span>
-            <Link href="/#usluge" className="hover:text-[#f97316] transition-colors">Usluge</Link>
+            <Link href="/#usluge" className="hover:text-[#f97316] transition-colors">
+              Usluge
+            </Link>
             <span>/</span>
             <span className="text-[#f97316]">Hausmajstor</span>
           </nav>
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-[#f97316]/10 border border-[#f97316]/20 rounded-full px-4 py-1.5 mb-4">
-              <span className="text-[#f97316] text-sm font-semibold uppercase tracking-wider">Naše usluge</span>
+              <span className="text-[#f97316] text-sm font-semibold uppercase tracking-wider">
+                Naše usluge
+              </span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               Hausmajstor — Sve Kućne Popravke
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Jedan poziv, sve je rešeno. Brza i pouzdana usluga za sve popravke i montažne radove u vašem domu — od sitnica do kompletnijih zadataka.
+              Jedan poziv, sve je rešeno. Brza i pouzdana usluga za sve popravke i montažne radove u
+              vašem domu — od sitnica do kompletnijih zadataka.
             </p>
           </div>
         </div>
@@ -160,13 +162,20 @@ export default function HausmajstorPage() {
               <h2 className="text-2xl font-bold text-[#1a2f4e] mb-6">O usluzi</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Svaki dom s vremenom nakuplja sitne popravke koje se odlažu — nagnuta vrata, odlepljena lajsna, pokvaren slavinski kartuš, polica koja treba da se montira. Umesto da tražite različite majstore za svaki problem, naš hausmajstor dolazi i rešava sve odjednom.
+                  Svaki dom s vremenom nakuplja sitne popravke koje se odlažu — nagnuta vrata,
+                  odlepljena lajsna, pokvaren slavinski kartuš, polica koja treba da se montira.
+                  Umesto da tražite različite majstore za svaki problem, naš hausmajstor dolazi i
+                  rešava sve odjednom.
                 </p>
                 <p>
-                  Majstor dolazi opremljen alatom i najčešće korišćenim rezervnim delovima, tako da se većina popravki rešava odmah pri prvoj poseti — bez čekanja na delove ili ponovnih dolazaka.
+                  Majstor dolazi opremljen alatom i najčešće korišćenim rezervnim delovima, tako da
+                  se većina popravki rešava odmah pri prvoj poseti — bez čekanja na delove ili
+                  ponovnih dolazaka.
                 </p>
                 <p>
-                  Usluga je idealna za stanodavce, starije osobe i sve koji žele da imaju pouzdanog majstora na jednom broju telefona. Napravite listu svega što treba i pošaljite nam je — dolazimo pripremljeni.
+                  Usluga je idealna za stanodavce, starije osobe i sve koji žele da imaju pouzdanog
+                  majstora na jednom broju telefona. Napravite listu svega što treba i pošaljite nam
+                  je — dolazimo pripremljeni.
                 </p>
               </div>
               <div className="mt-8">
@@ -175,7 +184,12 @@ export default function HausmajstorPage() {
                   className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea6c0a] text-white px-6 py-3 rounded font-semibold transition-colors duration-200"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
                   </svg>
                   Pozovite: 064-2022-216
                 </a>
@@ -222,8 +236,16 @@ export default function HausmajstorPage() {
                   {cat.services.map((service) => (
                     <li key={service} className="flex items-start gap-2.5 text-sm text-gray-600">
                       <div className="w-4 h-4 bg-[#f97316]/15 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                        <svg className="w-2.5 h-2.5 text-[#f97316]" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        <svg
+                          className="w-2.5 h-2.5 text-[#f97316]"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       </div>
                       {service}
@@ -246,7 +268,10 @@ export default function HausmajstorPage() {
           <h2 className="text-2xl font-bold text-[#1a2f4e] mb-8 text-center">Galerija radova</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {images.slice(1).map((src, i) => (
-              <div key={src} className="relative aspect-video rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+              <div
+                key={src}
+                className="relative aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200"
+              >
                 <Image
                   src={src}
                   alt={`Hausmajstor - primer ${i + 2}`}
@@ -268,7 +293,10 @@ export default function HausmajstorPage() {
           </h2>
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.q} className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 flex items-start gap-4">
+              <div
+                key={faq.q}
+                className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 flex items-start gap-4"
+              >
                 <div className="w-6 h-6 bg-[#f97316] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                   <span className="text-white text-xs font-bold">?</span>
                 </div>
@@ -285,9 +313,7 @@ export default function HausmajstorPage() {
       {/* CTA */}
       <section className="py-16 bg-[#1a2f4e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-            Imate listu popravki?
-          </h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Imate listu popravki?</h2>
           <p className="text-gray-300 mb-8 text-lg">
             Pošaljite nam je unapred i dolazimo pripremljeni — sve u jednoj poseti.
           </p>
@@ -297,7 +323,12 @@ export default function HausmajstorPage() {
               className="inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea6c0a] text-white px-8 py-4 rounded font-semibold transition-colors duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
               </svg>
               064-2022-216
             </a>

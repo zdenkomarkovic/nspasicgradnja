@@ -19,12 +19,7 @@ export default function KeramicarskiRadoviPage() {
         "Pre polaganja pločica pažljivo pripremamo podlogu — nivelisanje, lepak odgovarajuće klase i precizno rezanje pločica oko svih prepreka. Koristimo isključivo materijale za fugovanje i lepljenje proverenih brendova koji garantuju dugotrajnost.",
         "Posebno pažljivo radimo u mokrim prostorima (kupatilo, kuhinja) gde je hidroizolacija podloge ključna. Sve radove izvodimo u skladu sa tehničkim normama za mokre prostorije.",
       ]}
-      images={[
-        "/IMG-20260123-WA0032.jpg",
-        "/IMG-20260123-WA0033.jpg",
-        "/IMG-20260123-WA0034.jpg",
-        "/IMG-20260123-WA0035.jpg",
-      ]}
+      images={["/3.webp", "/a (7).jpg", "/a (2).jpg", "/a (3).jpg"]}
       features={[
         {
           title: "Kupatila i kuhinje",

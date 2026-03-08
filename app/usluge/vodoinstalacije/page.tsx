@@ -19,12 +19,7 @@ export default function VodoinstalacijePage() {
         "Koristimo cevi i fitinge proverenih proizvođača koji garantuju dugotrajnost i pouzdanost instalacija. Svaki rad se izvodi po važećim standardima i uz poštovanje tehničkih normi.",
         "Pre početka radova detaljno pregledamo stanje postojećih instalacija i dajemo preporuke. Transparentno objašnjavamo šta je potrebno uraditi i zašto, bez skrivenih troškova.",
       ]}
-      images={[
-        "/IMG-20260123-WA0028.jpg",
-        "/IMG-20260123-WA0029.jpg",
-        "/IMG-20260123-WA0030.jpg",
-        "/IMG-20260123-WA0031.jpg",
-      ]}
+      images={["/3.webp", "/a (7).jpg", "/a (2).jpg", "/a (3).jpg"]}
       features={[
         {
           title: "Nove instalacije",

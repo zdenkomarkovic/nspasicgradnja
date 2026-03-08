@@ -19,12 +19,7 @@ export default function AdaptacijePage() {
         "Koristimo isključivo sertifikovane materijale od proverenih dobavljača. Naši majstori su specijalizovani za sve vrste završnih radova — od rušenja i zidanja, gletovanja i farbanja, do postavljanja podnih obloga i ugradnje enterijera.",
         "Po završetku radova, prostor ostavljamo čist i ureden, a vi dobijate garanciju na izvedene radove. Vaše zadovoljstvo je naš najveći uspeh.",
       ]}
-      images={[
-        "/IMG-20260123-WA0024.jpg",
-        "/IMG-20260123-WA0025.jpg",
-        "/IMG-20260123-WA0026.jpg",
-        "/IMG-20260123-WA0027.jpg",
-      ]}
+      images={["/a (5).jpg", "/a (6).jpg", "/a (15).jpg", "/a (16).jpg"]}
       features={[
         {
           title: "Rušenje i zidanje",
