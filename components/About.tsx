@@ -64,13 +64,14 @@ export default function About() {
             </p>
 
             {/* Badges */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-wrap" style={{gap: "12px"}}>
               {badges.map((badge) => (
                 <div
                   key={badge.label}
-                  className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 hover:border-[#f97316]/30 transition-colors duration-200"
+                  className="flex items-center gap-3 border border-white/10 rounded-xl px-4 py-3"
+                  style={{width: "calc(50% - 6px)", backgroundColor: "rgba(255,255,255,0.05)"}}
                 >
-                  <div className="text-[#f97316] shrink-0">{badge.icon}</div>
+                  <div className="shrink-0" style={{color: "#f97316"}}>{badge.icon}</div>
                   <span className="text-white text-sm font-medium">
                     {badge.label}
                   </span>
@@ -80,7 +81,7 @@ export default function About() {
           </div>
 
           {/* Right: Stats */}
-          <div className="grid grid-cols-2 gap-3 sm:gap-6">
+          <div className="flex flex-wrap" style={{gap: "12px"}}>
             {[
               { value: "10+", label: "Godina iskustva", sub: "u građevinskoj industriji" },
               { value: "200+", label: "Projekata", sub: "uspešno realizovanih" },
@@ -89,13 +90,14 @@ export default function About() {
             ].map((stat) => (
               <div
                 key={stat.label}
-                className="bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center hover:border-[#f97316]/30 hover:bg-[#f97316]/5 transition-all duration-300"
+                className="border border-white/10 rounded-xl p-4 text-center"
+                style={{width: "calc(50% - 6px)", backgroundColor: "rgba(255,255,255,0.05)"}}
               >
-                <div className="text-2xl sm:text-4xl font-bold text-[#f97316] mb-1 sm:mb-2">
+                <div className="text-2xl sm:text-4xl font-bold mb-1" style={{color: "#f97316"}}>
                   {stat.value}
                 </div>
-                <div className="text-white font-semibold text-sm sm:text-base mb-0.5 sm:mb-1">{stat.label}</div>
-                <div className="text-gray-400 text-xs">{stat.sub}</div>
+                <div className="text-white font-semibold text-sm sm:text-base mb-0.5">{stat.label}</div>
+                <div className="text-xs" style={{color: "#9ca3af"}}>{stat.sub}</div>
               </div>
             ))}
           </div>

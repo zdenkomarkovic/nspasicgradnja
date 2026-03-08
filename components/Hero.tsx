@@ -34,26 +34,27 @@ export default function Hero() {
             </p>
 
             {/* Two main services highlight */}
-            <div className="grid grid-cols-2 gap-1.5 sm:gap-3 mb-3 sm:mb-8">
+            <div className="flex flex-wrap mb-3 sm:mb-8" style={{gap: "6px"}}>
               {[
                 { href: "/usluge/adaptacije", label: "Adaptacije", sub: "Renoviranje stanova", d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" },
                 { href: "/usluge/hausmajstor", label: "Hausmajstor", sub: "Kućne popravke", d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z" },
-                { href: "/usluge/vodoinstalacije", label: "Vodoinstalacije", sub: "Instalacije i popravke", d: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" },
+                { href: "/usluge/vodoinstalacije", label: "Vodoinstalacije", sub: "Instalacije", d: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" },
                 { href: "/usluge/keramicarski-radovi", label: "Keramičarski", sub: "Pločice", d: "M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" },
               ].map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="group flex items-center gap-2 bg-white/5 hover:bg-[#f97316]/15 border border-white/10 hover:border-[#f97316]/50 rounded-lg px-2 py-1.5 sm:px-4 sm:py-3 sm:rounded-xl transition-all duration-200"
+                  className="flex items-center gap-2 border border-white/10 rounded-lg px-2 py-1.5 sm:px-4 sm:py-3"
+                  style={{width: "calc(50% - 3px)", backgroundColor: "rgba(255,255,255,0.05)"}}
                 >
-                  <div className="w-7 h-7 sm:w-9 sm:h-9 bg-[#f97316]/20 group-hover:bg-[#f97316] rounded-md sm:rounded-lg flex items-center justify-center shrink-0 transition-colors duration-200">
-                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#f97316] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center justify-center shrink-0" style={{width: "28px", height: "28px", backgroundColor: "rgba(249,115,22,0.2)", borderRadius: "6px"}}>
+                    <svg className="w-4 h-4" style={{color: "#f97316"}} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.d} />
                     </svg>
                   </div>
                   <div>
-                    <div className="text-white font-semibold text-xs sm:text-sm leading-tight">{item.label}</div>
-                    <div className="text-gray-300 text-[10px] sm:text-xs leading-tight">{item.sub}</div>
+                    <div className="text-white font-semibold text-xs leading-tight">{item.label}</div>
+                    <div className="text-xs leading-tight" style={{color: "#9ca3af"}}>{item.sub}</div>
                   </div>
                 </a>
               ))}
