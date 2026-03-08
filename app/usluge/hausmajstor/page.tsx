@@ -119,7 +119,7 @@ const faqs = [
 ];
 
 export default function HausmajstorPage() {
-  const images = ["/3.webp", "/a (7).jpg", "/a (2).jpg", "/a (3).jpg"];
+  const images = ["/2149176718.jpg", "/2149176686.jpg", "/2149176712.jpg", "/2149176704.jpg"];
 
   return (
     <>
