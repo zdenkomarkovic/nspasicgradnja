@@ -80,7 +80,7 @@ export default function About() {
           </div>
 
           {/* Right: Stats */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6">
             {[
               { value: "10+", label: "Godina iskustva", sub: "u građevinskoj industriji" },
               { value: "200+", label: "Projekata", sub: "uspešno realizovanih" },
@@ -89,12 +89,12 @@ export default function About() {
             ].map((stat) => (
               <div
                 key={stat.label}
-                className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#f97316]/30 hover:bg-[#f97316]/5 transition-all duration-300"
+                className="bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center hover:border-[#f97316]/30 hover:bg-[#f97316]/5 transition-all duration-300"
               >
-                <div className="text-4xl font-bold text-[#f97316] mb-2">
+                <div className="text-2xl sm:text-4xl font-bold text-[#f97316] mb-1 sm:mb-2">
                   {stat.value}
                 </div>
-                <div className="text-white font-semibold mb-1">{stat.label}</div>
+                <div className="text-white font-semibold text-sm sm:text-base mb-0.5 sm:mb-1">{stat.label}</div>
                 <div className="text-gray-400 text-xs">{stat.sub}</div>
               </div>
             ))}

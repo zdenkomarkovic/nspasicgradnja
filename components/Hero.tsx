@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center">
       {/* Background image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/1.webp"
           alt="N Spasić Gradnja"
           fill
-          className="object-cover "
+          className="object-cover"
           priority
           sizes="100vw"
         />
@@ -59,7 +59,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="flex flex-row gap-2 sm:gap-4">
               <a
                 href="#kontakt"
                 className="inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea6c0a] text-white px-6 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base transition-colors duration-200 shadow-lg"
