@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import PhoneLink from "@/components/PhoneLink";
 
 interface FAQ {
   q: string;
@@ -193,8 +194,8 @@ export default function ServicePage({
             Kontaktirajte nas danas i dobijte besplatnu procenu.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:0642022216"
+            <PhoneLink
+              href="tel:+381642022216"
               className="inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea6c0a] text-white px-8 py-4 rounded font-semibold transition-colors duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -206,7 +207,7 @@ export default function ServicePage({
                 />
               </svg>
               064-2022-216
-            </a>
+            </PhoneLink>
             <Link
               href="/#kontakt"
               className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-[#f97316] text-white hover:text-[#f97316] px-8 py-4 rounded font-semibold transition-all duration-200"

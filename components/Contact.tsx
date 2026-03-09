@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PhoneLink from "@/components/PhoneLink";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -57,8 +58,8 @@ export default function Contact() {
               </h3>
 
               <div className="space-y-5">
-                <a
-                  href="tel:0642022216"
+                <PhoneLink
+                  href="tel:+381642022216"
                   className="flex items-center gap-4 group"
                 >
                   <div className="w-12 h-12 bg-[#f97316]/10 rounded-xl flex items-center justify-center text-[#f97316] shrink-0 group-hover:bg-[#f97316] group-hover:text-white transition-all duration-200">
@@ -74,7 +75,7 @@ export default function Contact() {
                       064-2022-216
                     </div>
                   </div>
-                </a>
+                </PhoneLink>
 
                 <a
                   href="mailto:nspasicgradnja@gmail.com"
@@ -119,15 +120,15 @@ export default function Contact() {
               <p className="text-gray-300 text-sm mb-4">
                 Pozovite nas odmah i naš tim ce reagovati što je pre moguće.
               </p>
-              <a
-                href="tel:0642022216"
+              <PhoneLink
+                href="tel:+381642022216"
                 className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea6c0a] text-white px-5 py-2.5 rounded font-semibold text-sm transition-colors duration-200"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 Pozovite: 064-2022-216
-              </a>
+              </PhoneLink>
             </div>
           </div>
 
