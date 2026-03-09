@@ -4,7 +4,8 @@
       "Bash(dir:*)",
       "Bash(node --version:*)",
       "Bash(npm:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(ls:*)"
     ]
   }
 }

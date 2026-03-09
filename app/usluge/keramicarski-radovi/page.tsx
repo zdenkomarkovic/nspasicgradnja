@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Keramičarski Radovi | N Spasić Gradnja",
+export const metadata: Metadata = buildMetadata({
+  title: "Keramičarski Radovi",
   description:
-    "Precizno polaganje keramičkih pločica za podove i zidove — kupatila, kuhinje, terase, balkoni. Savršena funga i ravne ivice zagarantovane.",
-};
+    "Precizno polaganje keramičkih pločica u Srbiji — podovi i zidovi, kupatila, kuhinje, terase, balkoni. Savršena funga i ravne ivice zagarantovane. Besplatna procena.",
+  url: `${SITE_URL}/usluge/keramicarski-radovi`,
+});
 
 export default function KeramicarskiRadoviPage() {
   return (

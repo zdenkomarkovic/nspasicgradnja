@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Adaptacije i Renoviranje Stanova | N Spasić Gradnja",
+export const metadata: Metadata = buildMetadata({
+  title: "Adaptacije i Renoviranje Stanova",
   description:
-    "Kompletne adaptacije i renoviranje stanova i kuća. Rušenje pregradnih zidova, gletovanje, farbanje, postavljanje podova i sve završne radove.",
-};
+    "Kompletne adaptacije i renoviranje stanova i kuća u Srbiji. Rušenje pregradnih zidova, gletovanje, farbanje, postavljanje podova i sve završne radove. Besplatna konsultacija.",
+  url: `${SITE_URL}/usluge/adaptacije`,
+});
 
 export default function AdaptacijePage() {
   return (

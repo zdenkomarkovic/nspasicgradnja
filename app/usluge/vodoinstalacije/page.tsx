@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Vodoinstalacije | N Spasić Gradnja",
+export const metadata: Metadata = buildMetadata({
+  title: "Vodoinstalacije",
   description:
-    "Profesionalne vodoinstalacije — nove instalacije, popravke kvarova, zamena cevi, sanitarni čvorovi. Brza reakcija i pouzdano rešenje.",
-};
+    "Profesionalne vodoinstalacije u Srbiji — nove instalacije, popravke kvarova, zamena cevi, sanitarni čvorovi. Brza reakcija i pouzdano rešenje. Pozovite 064-2022-216.",
+  url: `${SITE_URL}/usluge/vodoinstalacije`,
+});
 
 export default function VodoinstalacijePage() {
   return (

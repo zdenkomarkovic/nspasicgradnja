@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Hausmajstor - Kućne Popravke | N Spasić Gradnja",
+export const metadata: Metadata = buildMetadata({
+  title: "Hausmajstor — Kućne Popravke",
   description:
-    "Sve kućne popravke na jednom mestu — montaža nameštaja, sitni elektroradovi, popravke, farbanje, silikoniranje i još mnogo toga. Brza i pouzdana usluga.",
-};
+    "Sve kućne popravke na jednom mestu u Srbiji — montaža nameštaja, sitni elektroradovi, popravke, farbanje, silikoniranje i još mnogo toga. Brza i pouzdana usluga.",
+  url: `${SITE_URL}/usluge/hausmajstor`,
+});
 
 const categories = [
   {
