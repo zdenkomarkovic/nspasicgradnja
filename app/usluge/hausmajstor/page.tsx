@@ -14,6 +14,7 @@ export const metadata: Metadata = buildMetadata({
 
 const categories = [
   {
+    id: "montaza",
     title: "Montaža i ugradnja",
     icon: "🔧",
     services: [
@@ -28,6 +29,7 @@ const categories = [
     ],
   },
   {
+    id: "stolarija",
     title: "Vrata, prozori i podovi",
     icon: "🚪",
     services: [
@@ -42,6 +44,7 @@ const categories = [
     ],
   },
   {
+    id: "zidovi",
     title: "Zidovi i bojenje",
     icon: "🎨",
     services: [
@@ -56,6 +59,7 @@ const categories = [
     ],
   },
   {
+    id: "vodovod",
     title: "Vodovod i sanitarije",
     icon: "🚿",
     services: [
@@ -70,6 +74,7 @@ const categories = [
     ],
   },
   {
+    id: "elektrika",
     title: "Elektrika i osvetljenje",
     icon: "💡",
     services: [
@@ -84,6 +89,7 @@ const categories = [
     ],
   },
   {
+    id: "sitnice",
     title: "Ostale sitne popravke",
     icon: "🛠️",
     services: [
@@ -234,7 +240,7 @@ export default function HausmajstorPage() {
               >
                 <div className="bg-[#1a2f4e] px-6 py-4 flex items-center gap-3">
                   <span className="text-2xl">{cat.icon}</span>
-                  <h3 className="text-white font-bold">{cat.title}</h3>
+                  <h3 id={cat.id} className="text-white font-bold">{cat.title}</h3>
                 </div>
                 <ul className="p-5 space-y-2.5">
                   {cat.services.map((service) => (
